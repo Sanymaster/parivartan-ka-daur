@@ -1,0 +1,8 @@
+{
+  "name": "Parivartan Ka Daur — परिवर्तन का दौर (Digital Newspaper & E-Paper)",
+  "description": "राष्ट्रीय हिंदी दैनिक समाचार पत्र 'परिवर्तन का दौर' (RNI: UPHIN47157, मंडी चौक, मुरादाबाद) का आधिकारिक डिजिटल समाचार पोर्टल और ई-पेपर।",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

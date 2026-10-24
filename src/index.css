@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Noto Sans Devanagari', 'Inter', system-ui, -apple-system, sans-serif;
+    --font-serif: 'Merriweather', 'Noto Sans Devanagari', Georgia, serif;
+    --font-display: 'Rozha One', 'Noto Sans Devanagari', Georgia, serif;
+    --font-mono: 'Inter', 'Noto Sans Devanagari', ui-monospace, SFMono-Regular, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.65;
+  }
+
+  h1, h2, h3, .font-broadsheet {
+    font-family: var(--font-serif);
+  }
+
+  .font-masthead {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes ticker-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker-scroll 38s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-ticker {
+    animation: none;
+  }
+}
