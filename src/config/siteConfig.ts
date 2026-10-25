@@ -58,7 +58,7 @@ export const siteConfig: SiteConfig = {
   contactPhone: "+91-8958829272",
   whatsappNumber: "918958829272",
   // Official Domain URL
-  domainUrl: "https://parivartankadaur.in",
+  domainUrl: "https://parivartan-ka-daur.vercel.app",
   // Edition & Issue Metadata
   editionName: "मुरादाबाद संस्करण (Moradabad Edition)",
   volumeIssue: "वर्ष-1, अंक-131",

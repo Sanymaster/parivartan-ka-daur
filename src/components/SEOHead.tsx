@@ -13,10 +13,7 @@ interface SEOHeadProps {
 
 export function SEOHead({ route, activeArticle }: SEOHeadProps) {
   useEffect(() => {
-    const origin =
-      typeof window !== 'undefined' && window.location.origin
-        ? window.location.origin
-        : siteConfig.domainUrl;
+    const origin = siteConfig.domainUrl.replace(/\/$/, '');
 
     let title = `${siteConfig.newspaperName} (${siteConfig.newspaperNameEn}) — ${siteConfig.subtitle} | RNI: ${siteConfig.prgiRegistrationNumber}`;
     let description = `${siteConfig.subtitle} '${siteConfig.newspaperName}' (RNI: ${siteConfig.prgiRegistrationNumber}) — ${siteConfig.headOfficeAddress}। मुरादाबाद, उत्तर प्रदेश, उत्तराखंड और देश-दुनिया की ताज़ा खबरें एवं दैनिक ई-पेपर।`;
